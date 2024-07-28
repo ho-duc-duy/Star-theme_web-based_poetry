@@ -1,0 +1,990 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+.page {
+    overflow: hidden;
+    position: relative;
+    height: 1024px;
+    margin-top: -2px;
+}
+/* PAGE1 */
+.call-to-action {
+    position: absolute;
+    background-image: url(images/page-1/call-to-action.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12%;
+    height: 12%;
+    top: 8%;
+    left: 8%;
+    z-index: 999;
+}
+.bg-music {
+    width: 250px;
+    z-index: 1000;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    opacity: 0.5;
+}
+.bg-music:hover {
+    opacity: 1;
+}
+.page1 {
+    background-image: url(images/page-1/landing-page-bg.jpg);
+}
+.star-random {
+    position: relative;
+    background-image: url(images/page-1/star-random.png);
+    height: 1024px;
+    background-size: contain;
+    animation-name: star-blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.page-1-text {
+    position: absolute;
+    background-image: url(images/page-1/landing-page-text.png);
+    background-size: contain;
+    height: 1024px;
+    width: 100%;
+    background-repeat: no-repeat;
+    top: 0px;
+    background-position: 0px 220px;
+    z-index: 5;
+}
+.star-rotate {
+    position: absolute;
+    width: 27;
+    height: 50%;
+    right: -8%;
+    bottom: 25%;
+    z-index: 8;
+    animation-name: star-rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.star-rotate img {
+    width: 100%;
+    height: 100%;
+    display: inline;
+}
+@keyframes star-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes star-blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* END PAGE 1 */
+
+/* PAGE2 */
+.page2 {
+    background-image: url(images/page-2/page-2-bg.png);
+}
+.catsle {
+    background-image: url(images/page-2/catsle.png);
+    position: absolute;
+    width: 60%;
+    height: 800px;
+    z-index: 11;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 0%;
+}
+.cloud1 {
+    position: absolute;
+    background-image: url(images/page-2/cloud-layer-01.png);
+    width: 60%;
+    height: 800px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -10%;
+    right: -25%;
+    z-index: 10;
+}
+.cloud2 {
+    position: absolute;
+    background-image: url(images/page-2/cloud-layer-02.png);
+    width: 70%;
+    height: 900px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -8%;
+    right: -27%;
+    z-index: 9;
+}
+.cloud3 {
+    position: absolute;
+    background-image: url(images/page-2/cloud-layer-03.png);
+    width: 90%;
+    height: 1024px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -10%;
+    right: -30%;
+    z-index: 7;
+
+}
+.cloud1:hover {
+    transition: ease;
+    animation-duration: 2s;
+    animation-name: cloud1animate ;
+}
+@keyframes cloud1animate {
+    0% {
+        bottom: -10%;
+        right: -25%;
+    }
+    50% {
+        bottom: -15%;
+        right: -20%;
+    }
+    100% {
+        bottom: -10%;
+        right: -25%;
+    }
+}
+.cloud2:hover {
+    transition: ease;
+    animation-duration: 2s;
+    animation-name: cloud2animate ;
+}
+@keyframes cloud2animate {
+    0% {
+        bottom: -8%;
+        right: -27%;
+    }
+    50% {
+        bottom: -4%;
+        right: -22%;
+    }
+    100% {
+        bottom: -8%;
+        right: -27%;
+    }
+}
+.cloud3:hover {
+    transition: ease;
+    animation-duration: 2s;
+    animation-name: cloud3animate ;
+}
+@keyframes cloud3animate {
+    0% {
+        bottom: -10%;
+        right: -30%;
+    }
+    50% {
+        bottom: -15%;
+        right: -35%;
+    }
+    100% {
+        bottom: -10%;
+        right: -30%;
+    }
+}
+.waves1 {
+    background-image: url(images/page-2/waves.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0%;
+    height: 20%;
+    width: 120%;
+    z-index: 12;
+    left: -100px;
+    animation-name: wavemoving1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes wavemoving1 {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(25px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.waves2 {
+    background-image: url(images/page-2/waves.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -1%;
+    height: 15%;
+    width: 120%;
+    z-index: 13;
+    left: -100px;
+    animation-name: wavemoving2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes wavemoving2 {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-25px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.text-star-contain {
+    top: 30%;
+    position: absolute;
+    color: yellow;
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    right: 25%;
+    z-index: 13;
+}
+.text-star-contain span {
+    display: inline-block;
+}
+.text-star-contain span:hover {
+    transform: scale(1.3);
+    -webkit-animation: bounce 1s ease;
+    animation: glow 1s infinite alternate;
+
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 1px #fff, 0 0 2px #dfdfdf, 0 0 3px #e2e2e2, 0 0 4px #eaeaea, 0 0 5px #ffff00, 0 0 6px #cef90d, 0 0 7px #e6d700;
+    }
+    
+    to {
+      text-shadow: 0 0 2px #fff, 0 0 3px #ededed, 0 0 4px #dfdfdf, 0 0 5px #fff700, 0 0 6px #f8d460, 0 0 7px #ffe100c1, 0 0 8px #ffee00;
+    }
+  }
+@-webkit-keyframes bounce {
+    0% {
+    }
+    100% {
+      transform:translateY(-20px);
+    }
+  }
+.text-1-contain {
+    top: 40%;
+    position: absolute;
+    color: white;
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    right: 10%;
+    z-index: 13;
+}
+.text-1-contain span {
+    display: inline-block;
+}
+.text-1-contain span:hover {
+    color: rgb(205, 59, 205);
+    -webkit-animation: bounce 1s ease;
+
+}
+@-webkit-keyframes bounce {
+    0% {
+    }
+    100% {
+      transform:translateY(-20px);
+    }
+  }
+  .text-2-contain {
+    top: 70%;
+    position: absolute;
+    color: white;
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    left: 10%;
+    z-index: 13;
+}
+.text-2-contain span {
+    display: inline-block;
+}
+.text-2-contain span:hover {
+    color: rgb(205, 59, 205);
+    -webkit-animation: bounce 1s ease;
+
+}
+@-webkit-keyframes bounce {
+    0% {
+    }
+    100% {
+      transform:translateY(-20px);
+    }
+  }
+  .main-star {
+    position: absolute;
+    top: 90px;
+    width: 15%;
+    height: auto;
+    z-index: 15;
+    left: 700px;
+    
+  }
+  .main-star:hover {
+    animation-name: blink;
+    animation-duration: 1s;
+  }
+  @keyframes blink {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* END PAGE 2 */
+/* PAGE3 */
+.page3 {
+    background-image: url(images/page-3/page-3-bg.png);
+}
+.eremite {
+    background-image: url(images/page-3/Eremite-constellation.png);
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 17;
+    top: 18%;
+    left: 30%;
+}
+.eremite:hover {
+    animation-name: ereblink;
+    animation-duration: 3s;
+  }
+  @keyframes ereblink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.moon {
+    background-image: url(images/page-3/moon.png);
+    position: absolute;
+    width: 20%;
+    height: 30%;
+    top: 10%;
+    right: 1%;
+    z-index: 18;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.moon:hover {
+    animation-name: blink;
+    animation-duration: 3s;
+  }
+  @keyframes blink {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.page3text1 {
+    position: absolute;
+    width: 20%;
+    z-index: 19;
+    bottom: 30%;
+    left: 5%;
+}
+.page3text1:hover,.page3text2:hover {
+    animation-name: blink;
+    animation-duration: 1s;
+  }
+  @keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.page3text2 {
+    position: absolute;
+    width: 20%;
+    z-index: 19;
+    bottom: 30%;
+    right: 5%;
+}
+/* END PAGE 3 */
+/* PAGE4 */
+.page4 {
+    background-image: url(images/page-4/page-4-bg.png);
+}
+.mountain {
+    background-image: url(images/page-4/mountainfull.png);
+    position: absolute;
+    width: 120%;
+    height: 80%;
+    bottom: -15%;
+    left: -15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lane {
+    background-image: url(images/page-4/lanewithriver.png);
+    position: absolute;
+    width: 180%;
+    bottom: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: -28%;
+    height: 35%;
+    z-index: 22;
+}
+.text-bla1-contain {
+    top: 30%;
+    position: absolute;
+    color: white;
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    left: 1%;
+    z-index: 13;
+}
+.text-bla1-contain span {
+    display: inline-block;
+}
+.text-bla1-contain span:hover {
+    color: rgb(205, 59, 205);
+    -webkit-animation: bounce 1s ease;
+
+}
+@-webkit-keyframes bounce {
+    0% {
+    }
+    100% {
+      transform:translateY(-20px);
+    }
+  }
+  .text-water-contain {
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transform: translate(-50%,-50%);
+    top: 28%;
+    left: 10.5%;
+    position: absolute;
+  }
+  .text-water-contain h2 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    font-size: 55px;
+    color: rgb(132, 132, 237);
+    /* background-image: url(images/page-4/water.png);
+    background-repeat: repeat-x;
+    -webkit-background-clip: text; */
+  }
+  .text-water-contain h2:hover {
+    animation: waterchange 2s ease infinite;
+  }
+  @keyframes waterchange {
+    0% {
+        color: rgb(132, 132, 237);
+    }
+    50% {
+        color: aqua;
+    }
+    75% {
+        color: rgb(64, 143, 234);
+    }
+    100% {
+        color: rgb(132, 132, 237);
+    }
+  }
+.text-4-contain {
+    top: 30%;
+    position: absolute;
+    color: white;
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    left: 23%;
+    z-index: 13;
+}
+.text-4-contain span {
+    display: inline-block;
+}
+.text-4-contain span:hover {
+    color: rgb(205, 59, 205);
+    -webkit-animation: bounce 1s ease;
+
+}
+@-webkit-keyframes bounce {
+    0% {
+    }
+    100% {
+      transform:translateY(-20px);
+    }
+  }
+  .text-5-contain {
+    top: 40%;
+    position: absolute;
+    color: white;
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    right: 10%;
+    z-index: 13;
+}
+.text-5-contain span {
+    display: inline-block;
+}
+.text-5-contain span:hover {
+    color: rgb(205, 59, 205);
+    -webkit-animation: bounce 1s ease;
+
+}
+@-webkit-keyframes bounce {
+    0% {
+    }
+    100% {
+      transform:translateY(-20px);
+    }
+  }
+  /* END PAGE 4 */
+  /* PAGE5 */
+  .page5 {
+    background-image: url(images/page-5/page-5-bg.png);
+  }
+  .mountwithfield {
+    background-image: url(images/page-5/mountwithfield.png);
+    width: 120%;
+    height: 80%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: -5%;
+    left: -10%;
+  }
+  .snow1 {
+    width: 60%;
+    height: 100%;
+    background-image: url(images/page-5/falling-snow-01.png);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0%;
+    left: 5%;
+    animation-name: snowfall1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes snowfall1 {
+    0% {
+       top: 0%;
+    }
+    50% {
+        top: 50%;
+        left: 10%;
+    }
+    100% {
+        top: 100%;
+        left: 0%;
+    }
+  }
+  .snow2 {
+    width: 60%;
+    height: 100%;
+    background-image: url(images/page-5/falling-snow-02.png);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0%;
+    right: 0%;
+    animation-name: snowfall2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes snowfall2 {
+    0% {
+       top: 0%;
+    }
+    50% {
+        top: 50%;
+        right: 10%;
+    }
+    100% {
+        top: 100%;
+        right: 0%;
+    }
+  }
+  .text-6-contain {
+    top: 35%;
+    position: absolute;
+    color: white;
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    left: 18%;
+    z-index: 13;
+}
+.text-6-contain span {
+    display: inline-block;
+}
+.text-6-contain span:hover {
+    color: rgb(205, 59, 205);
+    -webkit-animation: bounce 1s ease;
+
+}
+@-webkit-keyframes bounce {
+    0% {
+    }
+    100% {
+      transform:translateY(-20px);
+    }
+  }
+  .text-7-contain {
+    top: 40%;
+    position: absolute;
+    color: white;
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    right: 18%;
+    z-index: 13;
+}
+.text-7-contain span {
+    display: inline-block;
+}
+.text-7-contain span:hover {
+    color: rgb(205, 59, 205);
+    -webkit-animation: bounce 1s ease;
+
+}
+@-webkit-keyframes bounce {
+    0% {
+    }
+    100% {
+      transform:translateY(-20px);
+    }
+  }
+  /* END PAGE 5 */
+  /* PAGE 6 */
+  .page6 {
+    background-image: url(images/page-6/page-6-bg-01.png);
+  }
+  .text-8-contain {
+    top: 50%;
+    position: absolute;
+    color: white;
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    left: 33%;
+    z-index: 5;
+}
+.page6variation {
+    background-image: url(images/page-6/page-6-bg-02.png);
+    z-index: 1;
+    width: 100%;
+    height: 1024px;
+    position: absolute;
+}
+.supahotfaia1 {
+    background-image: url(images/page-6/flame-vari1.png);
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 4;
+    bottom: 25%;
+    left: 43%;
+    animation-name: faia1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes faia1 {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.supahotfaia2 {
+    background-image: url(images/page-6/flame-vari2.png);
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 4;
+    bottom: 25%;
+    left: 43%;
+    animation-name: faia2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes faia2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.variation2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.firetext {
+    background-image: url(images/page-6/text-fire.png);
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 4;
+    bottom: -50%;
+    left: 20%;
+}
+/* END PAGE 6 */
+/* PAGE 7 */
+.page7 {
+    background-image: url(images/page-7/page-7-bg.png);
+}
+.hillandtree {
+    background-image: url(images/page-7/hills.png);
+    position: absolute;
+    width: 130%;
+    height: 120%;
+    bottom: -30%;
+    left: -15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+.couple {
+    background-image: url(images/page-7/boyandgirl.png );
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    bottom: -10%;
+    left: 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+.grave {
+    background-image: url(images/page-7/grave.png);
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    bottom: 0%;
+    left: 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 6;
+    display: none;
+    animation-name: fadegrave;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes fadegrave {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.main-starpage7 {
+    position: absolute;
+    top: 10%;
+    width: 15%;
+    height: auto;
+    z-index: 15;
+    left: 60%;
+    
+  }
+  .main-starpage7:hover {
+    animation-name: blink;
+    animation-duration: 1s;
+  }
+  @keyframes blink {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.text1 {
+    background-image: url(images/page-7/text1.png);
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    top: 40%;
+    right: 5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 20;
+}
+.text1.animate1 {
+    animation-name: goright;
+    animation-duration: 1s;
+
+}
+@keyframes goright {
+    0% {
+        right: 5%;
+    }
+    100% {
+        right: -1000px;
+    }
+}
+.text2 {
+    background-image: url(images/page-7/text2.png);
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    bottom: 25%;
+    left: 5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 20;
+}
+.text2.animate2 {
+    animation-name: goleft;
+    animation-duration: 1s;
+
+}
+@keyframes goleft {
+    0% {
+        left: 5%;
+    }
+    100% {
+        left: -1000px;
+    }
+}
+.text3 {
+    background-image: url(images/page-7/text3.png);
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    bottom: 25%;
+    right: -100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 20;
+}
+.text3.animate3 {
+    animation-name: goinside;
+    animation-duration: 1s;
+}
+@keyframes goinside {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 5%;
+    }
+}
+/* END PAGE 7 */
+/* PAGE 8 */
+.page8 {
+    background-image: url(images/page-8/page-8-bg.png);
+}
+.slice {
+    background-image: url(images/page-8/slice.png);
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 47%;
+    left: 30%;
+
+}
+.text-final1-contain {
+    top: 50%;
+    position: absolute;
+    color: white;
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 130px;
+    right: 30%;
+    z-index: 13;
+}
+.text-final1-contain span {
+    display: inline-block;
+}
+.text-final1-contain span:hover {
+    color: rgb(205, 59, 205);
+    -webkit-animation: bounce 1s ease;
+
+}
+@-webkit-keyframes bounce {
+    0% {
+    }
+    100% {
+      transform:translateY(-20px);
+    }
+  }
+  /* END PAGE 8 */

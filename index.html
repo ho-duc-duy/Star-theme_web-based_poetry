@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Star-theme web-based poetry</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+        <script type="text/javascript">
+          $( document ).ready(function() {
+            // animation page 6 : hover text->fire appear
+            $( ".text-8-contain p" ).hover(
+              function() {
+                $(".variation2").show();
+              }, function() {
+                $(".variation2").hide();
+              }
+            );
+            // animation page 7 : hover couple->text appear
+            $( ".couple" ).hover(
+              function() {
+                $(".text1").addClass("animate1").css("right", "-1000%");
+                $(".text2").addClass("animate2").css("left", "-1000%");
+                $(".text3").addClass("animate3").css("right", "5%");
+                $(".grave").show().addClass("fadegrave");
+                $(".couple").css("background-image","none");
+              }, function() {
+                $(".text1").removeClass("animate1").css("right", "-5%");
+                $(".text2").removeClass("animate2").css("left", "5%");
+                $(".text3").removeClass("animate3").css("right", "-100%");
+                $(".grave").removeClass("fadegrave").hide();
+                $(".couple").css("background-image","url(images/page-7/boyandgirl.png)");
+              }
+            );
+          });
+        </script>
+      </head>
+    <body>
+      <audio class="bg-music" src="YourName.mp3" autoplay loop controls></audio>
+      <!-- PAGE 1 -->
+      <div class="page page1">
+        <div class="call-to-action"></div>
+        <div class="star-random"></div>
+        <div class="page-1-text"></div>
+        <div class="star-rotate"><img src="images/page-1/star-rotate.png" alt=""></div>
+      </div>
+      <!-- END PAGE 1 -->
+       <!-- PAGE 2 -->
+      <div class="page page2">
+        <div class="catsle"></div>
+        <div class="star-random"></div>
+        <div class="cloud1"></div>
+        <div class="cloud2"></div>
+        <div class="cloud3"></div>
+        <div class="waves1"></div>
+        <div class="waves2"></div>
+        <div class="text-star-contain">
+          <span>Bright</span>
+          <span>star,</span>
+        </div>
+        <div class="text-1-contain">
+            <span>would</span>
+            <span>i</span>
+            <span>were</span>
+            <span>steadfast</span>
+            <span>as</span>
+            <span>thou</span>
+            <span>art--</span>
+        </div>
+        <div class="text-2-contain">
+            <span>Not</span>
+            <span>in</span>
+            <span>lone</span>
+            <span>splendour</span>
+            <span>hung</span>
+            <span>aloft</span>
+            <span>the</span>
+            <span>night</span>
+        </div>
+        <img class="main-star" src="images/page-2/main-star.png"></img>
+      </div>
+      <!-- END PAGE 2 -->
+       <!-- PAGE 3 -->
+      <div class="page page3">
+        <div class="star-random"></div>
+        <div class="eremite"></div>
+        <div class="moon"></div>
+        <img class="page3text1" src="images/page-3/page-3-text01.png" alt="">
+        <img class="page3text2" src="images/page-3/page-3-text02.png" alt="">
+        <!-- con cai dong sao bang nho lam nhe -->
+      </div>
+      <!-- END PAGE 3 -->
+       <!-- PAGE 4 -->
+      <div class="page page4">
+        <div class="star-random"></div>
+        <div class="mountain"></div>
+        <div class="lane"></div>
+        <img class="main-star" src="images/page-2/main-star.png"></img>
+        <div class="text-bla1-contain">
+          <span>The</span>
+          <span>moving</span>
+        </div>
+        <div class="text-water-contain">
+          <h2>WATER</h2>
+        </div>
+        <div class="text-4-contain">
+          <span>water</span>
+          <span>at</span>
+          <span>their</span>
+          <span>priestlike</span>
+          <span>task</span>
+      </div>
+      <div class="text-5-contain">
+        <span>Of</span>
+        <span>pure</span>
+        <span>ablution</span>
+        <span>round</span>
+        <span>earth's</span>
+        <span>human</span>
+        <span>shores,</span>
+    </div>
+      </div>
+      <!-- END PAGE 4 -->
+       <!-- PAGE 5 -->
+      <div class="page page5">
+        <div class="star-random"></div>
+        <img class="main-star" src="images/page-2/main-star.png"></img>
+        <div class="mountwithfield"></div>
+        <div class="snow1"></div>
+        <div class="snow2"></div>
+        <div class="text-6-contain">
+          <span>Or</span>
+          <span>gazing</span>
+          <span>on</span>
+          <span>the</span>
+          <span>new</span>
+          <span>soft-fallen</span>
+          <span>mask</span>
+      </div>
+      <div class="text-7-contain">
+        <span>Of</span>
+        <span>snow</span>
+        <span>upon</span>
+        <span>the</span>
+        <span>mountains's</span>
+        <span>and</span>
+        <span>the,</span>
+        <span>moors-,</span>
+    </div>
+      </div>
+      <!-- END PAGE 5 -->
+       <!-- PAGE 6 -->
+       <div class="page page6">
+        <div class="text-8-contain">
+          <p>No--yet still steadfast, still...</p>
+        </div>
+        <div class="variation2">
+          <div class="page6variation"></div>
+          <div class="supahotfaia1"></div>
+          <div class="supahotfaia2"></div>
+          <div class="firetext"></div>
+        </div>
+       </div>
+       <!-- END PAGE 6 -->
+        <!-- PAGE 7 -->
+        <div class="page page7">
+          <div class="star-random"></div>
+          <img class="main-starpage7" src="images/page-2/main-star.png"></img>
+          <div class="hillandtree"></div>
+          <div class="couple"></div>
+          <div class="grave"></div>
+          <div class="text1"></div>
+          <div class="text2"></div>
+          <div class="text3"></div>
+        </div>
+        <!-- END PAGE 7 -->
+         <!-- PAGE 8 -->
+        <div class="page page8">
+          <div class="star-random"></div>
+          <div class="slice"></div>
+          <div class="text-final1-contain">
+            <span>THE</span>
+            <span>END</span>
+        </div>
+        </div>
+        <!-- END PAGE 8 -->
+    </body>
+</html>
